@@ -1,0 +1,98 @@
+/* QnA Section */
+#qna-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: var(--neutral-100);
+  color: var(--neutral-900);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.qna-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.qna-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.qna-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.qna-item {
+  background: var(--neutral-50);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.qna-item:hover {
+  transform: scale(1.05) translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.qna-item h3 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.qna-item p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.qna-list a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.qna-image {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+}
+
+.qna-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #qna-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .qna-content,
+  .qna-image {
+    min-width: 0;
+  }
+  .qna-content h2 {
+    text-align: center;
+  }
+}
+
+.qna-asset {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 150px;
+  right: -1000px;
+  transform: rotate(-45deg);
+}

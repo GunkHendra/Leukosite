@@ -1,0 +1,25 @@
+/* Section CTA */
+#cta-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--neutral-900);
+  color: var(--neutral-50);
+  /* position: relative;
+  overflow: hidden; */
+}
+#cta-section a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--neutral-50);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  color: var(--neutral-900);
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+}
+#cta-section a:hover {
+  background-color: var(--neutral-900);
+  color: var(--neutral-50);
+  border: 1px solid var(--neutral-50);
+}
